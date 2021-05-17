@@ -6,16 +6,16 @@
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "postinstall": "ng build --aot --prod",
+    "heroku-postbuild": "ng build --prod",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.0.0",
     "@angular/cli": "~12.0.0",
-    "@angular/compiler-cli": "~12.0.0",
     "@angular/common": "~12.0.0",
     "@angular/compiler": "~12.0.0",
+    "@angular/compiler-cli": "~12.0.0",
     "@angular/core": "~12.0.0",
     "@angular/forms": "~12.0.0",
     "@angular/platform-browser": "~12.0.0",
@@ -24,7 +24,9 @@
     "angular-datatables": "^11.2.0",
     "bootstrap": "^5.0.1",
     "datatables.net-dt": "^1.10.24",
+    "express": "^4.17.1",
     "jquery": "^3.6.0",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tether": "^2.0.0",
     "tslib": "^2.1.0",
@@ -47,7 +49,7 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "typescript": "~4.2.3"
   },
-  "engines" :{
+  "engines": {
     "node": "14.17.0",
     "npm": "6.14.11"
   }
