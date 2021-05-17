@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+"styles": [
+              ...
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            ],
+            "scripts": [
+            "node_modules/jquery/dist/jquery.js",
+            "node_modules/datatables.net/js/jquery.dataTables.js",
+            "node_modules/bootstrap/dist/js/bootstrap.js",
+            ]
+            
+  Please make sure this is added to your angular.json file
+  
+  @import "datatables.net-dt/css/jquery.dataTables.css";
+
+and this is added to your styles.css file for it to display the css part of it properly.
+
+thank you
